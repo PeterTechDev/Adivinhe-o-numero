@@ -8,44 +8,69 @@
     <title>Jogo: Adivinhe o número</title>
 
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="assets/icon.png"/>
+    <link rel="icon" type="image/png" href="assets/icon.png" />
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<main>
+    <main>
 
-    <h1>
-        Tente vencer o Bender
-    </h1>
-    <br>
-    <h3>
-        Você tem três tentativas para acertar qual número o Bender está pensando de 0 a 10!
-    </h3>
+        <h1>
+            Tente vencer o Bender
+        </h1>
+        <br>
+        <h3>
+            Você tem três tentativas para acertar qual número o Bender está pensando de 0 a 10!
+        </h3>
 
-    <section class="main-container">
-        <div class="input-container">
-            <input type="number" name="usrGuess" id="usrGuess">
-            <button type="submit" onclick="guess">Tentar</button>
-        </div>
-        
-        <div class="img-aside">
-            <img src="assets/bender-cool.png" alt="">
-        </div>
-    </section>
 
-    <div class="hit">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="miss">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</main>
+        <section class="center">
+            <div class="input-container">
+                <table>
+                    <tr>
+                        <td><button class="numberBtn">0</button></td>
+                        <td><button class="numberBtn">1</button></td>
+                        <td><button class="numberBtn">2</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numberBtn">3</button></td>
+                        <td><button class="numberBtn">4</button></td>
+                        <td><button class="numberBtn">5</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numberBtn">6</button></td>
+                        <td><button class="numberBtn">7</button></td>
+                        <td><button class="numberBtn">8</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numberBtn">9</button></td>
+                        <td><button class="numberBtn">10</button></td>
+                    </tr>
+                </table>
+                <button type="submit" id="submitBtn" onclick="guess">Tentar</button>
+            </div>
+            <div class="aside">
+
+                <div class="img-container">
+                    <img src="assets/bender-cool.png" alt="">
+                </div>
+                <div class="score-container">
+                    <div class="hit">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="miss">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>

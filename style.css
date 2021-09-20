@@ -44,13 +44,19 @@ body {
 
 .miss {
     display: flex;
+    margin-top: 2rem;
+
 }
 .score {
     margin: 5px;
     width: 50px;
     height: 50px;
-
-    border: solid gray 4px;
+    align-items: center;
+    justify-content: center;
+    /* border: solid gray 4px; */
+}
+.score img {
+    width: 100%;
 }
 
 input {

@@ -1,6 +1,7 @@
 const submit = document.getElementById('submitBtn');
 const numberBtn = document.querySelectorAll('.numberBtn')
 const mainImg = document.getElementById('main-img')
+const missBoard = document.getElementsByClassName('miss')
 
 const benderNumber = parseInt(Math.random() * 11)
 console.log('O numero do Bender é: ' + benderNumber)
@@ -14,6 +15,8 @@ const userWon =()=>{
 const benderWonRound =()=>{
     console.log('Bender ganhou o round ' + benderNumber)
     benderScore += 1;
+    document.querySelector(".score").remove()
+    
     if(benderScore == 2){
         mainImg.src = 'assets/happy-bender.png'
     } else if (benderScore >= 3) {

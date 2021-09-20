@@ -41,7 +41,7 @@ body {
     height: 20vh;
     width: 48vw;
 }
-.hit, 
+
 .miss {
     display: flex;
 }

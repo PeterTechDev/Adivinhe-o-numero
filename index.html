@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo: Adivinhe o número</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="assets/icon.png"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+
+    <h1>
+        Tente vencer o Bender
+    </h1>
+    <br>
+    <h3>
+        Você tem três tentativas para acertar qual número o Bender está pensando de 0 a 10!
+    </h3>
+
+    <section class="main-container">
+        <div class="input-container">
+            <input type="number" name="usrGuess" id="usrGuess">
+            <button type="submit" onclick="guess">Tentar</button>
+        </div>
+        
+        <div class="img-aside">
+            <img src="assets/bender-cool.png" alt="">
+        </div>
+    </section>
+
+    <div class="hit">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="miss">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</main>
+</body>
+
+</html>

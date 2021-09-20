@@ -28,7 +28,7 @@ body {
 .img-container{
     width: 48vw;
     height: 28vh;
-    border: solid green 5px;
+    /* border: solid green 5px; */
 }
 
 .img-container img {
@@ -36,7 +36,8 @@ body {
 }
 
 .score-container{
-    border: solid greenyellow 4px;
+    margin-top: 1rem;
+    /* border: solid greenyellow 4px; */
     height: 20vh;
     width: 48vw;
 }

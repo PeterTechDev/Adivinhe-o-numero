@@ -92,7 +92,7 @@ background: #ffffff;
     font-size: larger;
     color: yellow;
 }
-#submitBtn:hover{
+button{
     cursor:pointer;
 }
 

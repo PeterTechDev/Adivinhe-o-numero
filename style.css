@@ -12,12 +12,9 @@ body {
 main {
     height: 600px;
     max-width: 430px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-h1{
-    margin-top: 3rem;
-}
 p{
     font-size: 1.5em;
 }
@@ -33,16 +30,19 @@ button{
 }
 
 .center{
-    display: flex;
     margin-top: 2rem;
     overflow: hidden;
-    /* border: solid green 2px; */
+    border: solid green 2px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "input img"
+    "input img"
+    "input img"
+    "score score"
 }
 
-.input-container{
-    width: 45vw;
-    margin-left: 1rem;
-}
 .numberBtn,
 #tip{
     width: 50px;
@@ -50,16 +50,19 @@ button{
     font-size: larger;
 }
 
-.img-container{
-    max-width: 30vh;
-    /* border: solid green 5px; */
+.input-container{
+    margin-left: 1rem;
+    grid-area: input;
+    border: solid green 5px;
 }
-
+.img-container{
+    border: solid green 5px;
+    grid-area: img;
+}
 .score-container{
-    margin-top: 1rem;
-    /* border: solid greenyellow 4px; */
-    height: 20vh;
-    width: 48vw;
+    margin: 1rem auto;
+    border: solid greenyellow 4px;
+    grid-area: score;
 }
 
 .miss {
@@ -73,7 +76,6 @@ button{
     height: 50px;
     align-items: center;
     justify-content: center;
-    /* border: solid gray 4px; */
 }
 
 input {
@@ -110,4 +112,35 @@ button {
 #tip {
     font-weight: 600;
     padding-top: 25px;
+}
+
+/* FOOTER */
+.footer{
+    text-align: center;
+    background: var(--black);
+    color: var(--white-smoke);
+    padding: 2rem 0;
+    height: 15vh;
+    font-size: .6rem;
+}
+.footer .text{
+    opacity: 0.8;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1rem; */
+    /* margin: 0 auto; */
+}
+.footer-links a{
+    color: var(--white-smoke);
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    margin: 0 .2rem;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+.footer-links a:hover{
+    background: var(--green-vtt);
 }

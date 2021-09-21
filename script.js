@@ -1,10 +1,8 @@
-const submit    = document.getElementById('submitBtn');
 const numberBtn = document.querySelectorAll('.numberBtn')
 const mainImg   = document.getElementById('main-img')
-const missBoard = document.getElementsByClassName('miss')
 const tip       = document.getElementById('tip')
 const title     = document.querySelector("body > main > h1");
-const subTitle  = document.querySelector("body > main > p")
+const subTitle  = document.querySelector("body > main > p");
 
 // Número aleatório do Bender - é definido toda vez que a página carrega
 const benderNumber = parseInt(Math.random() * 11)
@@ -22,12 +20,12 @@ const gameWinner =param=>{
     const final = document.createElement('div')
     document.querySelector("main").appendChild(final)
     final.id = "final"
-    submit.classList.remove('hide')
+    document.getElementById('submitBtn').classList.remove('hide')
 
     const benderOrUser =  param == 'user';
-    benderOrUser ? final.style.backgroundImage = "url('assets/ok-bender.png')" : final.style.backgroundImage = "url('assets/sad-bender.png')"
+    benderOrUser ? final.style.backgroundImage = "url('assets/sad-bender.png')" : final.style.backgroundImage = "url('assets/ok-bender.png')"
     benderOrUser ? title.innerHTML = 'Parabéns!' : title.innerHTML = 'Bite my shiny metal ass!'
-    benderOrUser ? subTitle.innerHTML = 'Você VENCEU o Bender!!!' : `O número era ${benderNumber}. O Bender te VENCEU!`
+    benderOrUser ? subTitle.innerText = 'Você VENCEU o Bender!!!' : subTitle.innerText = `O número era ${benderNumber}. O Bender te VENCEU!`
 }
 
 // Contador das chances

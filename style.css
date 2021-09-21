@@ -3,25 +3,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
 }
 
 body {
     background: #CCCCCC;
     text-align: center;
 }
+main {
+    max-width: 430px;
+    margin: auto;
+}
 
 h1{
     margin-top: 3rem;
 }
-p {
-    margin: 0 2rem;
+p{
     font-size: 1.5em;
+    text-align: center;
+}
+.subTitle {
+    margin: 0 2rem;
     text-align: justify;
+}
+img{
+    width: 100%;
 }
 .center{
     display: flex;
     margin-top: 2rem;
+    /* border: solid green 2px; */
+    overflow: hidden;
 }
+
 .input-container{
     width: 45vw;
     margin-left: 1rem;
@@ -29,16 +43,12 @@ p {
 .numberBtn{
     width: 50px;
     height: 50px;
+    font-size: larger;
 }
 
 .img-container{
-    width: 48vw;
-    height: 28vh;
+    max-width: 30vh;
     /* border: solid green 5px; */
-}
-
-.img-container img {
-    width: 100%;
 }
 
 .score-container{
@@ -50,7 +60,7 @@ p {
 
 .miss {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
 }
 .score {
@@ -60,9 +70,6 @@ p {
     align-items: center;
     justify-content: center;
     /* border: solid gray 4px; */
-}
-.score img {
-    width: 100%;
 }
 
 input {
@@ -76,4 +83,31 @@ margin-top: 12px;
 padding: 4px 8px;
 border-radius: 10px;
 background: #ffffff;
+}
+
+#submitBtn {
+    background-color: #666699;
+    padding: 15px;
+    font-size: larger;
+    color: yellow;
+}
+#submitBtn:hover{
+    cursor:pointer;
+}
+
+.hide {
+    display: none;
+}
+
+#final {
+    width: 50vw;
+    height: 50vh;
+}
+
+#tip {
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    height: 50px;
+    width: 50px;
 }

@@ -28,7 +28,7 @@ const benderWon =()=>{
     final.style.backgroundImage = "url('assets/ok-bender.png')";
     document.querySelector("main").appendChild(final)
     document.querySelector("body > main > h1").innerHTML = 'Bite my shiny metal ass!'
-    document.querySelector("body > main > p").innerHTML = 'O Bender te VENCEU!!!'
+    document.querySelector("body > main > p").innerHTML = `O número era ${benderNumber}. O Bender te VENCEU!`
     submit.classList.remove('hide')
 }
 const benderWonRound =()=>{

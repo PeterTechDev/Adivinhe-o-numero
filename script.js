@@ -54,10 +54,10 @@ numberBtn.forEach(el => el.addEventListener('click', ()=> {
 // Fornece a dica
 numberBtn.forEach(el => el.addEventListener('click', ()=> {
     if(el.value < benderNumber){
-    tip.innerHTML = 'Mais'
-setTimeout(()=> tip.innerHTML = '', 2000)  
+    tip.innerText = 'Mais'
+setTimeout(()=> tip.innerHTML = '', 1000)  
     } else {
-        tip.innerHTML = 'Menos'
-setTimeout(()=> tip.innerHTML = '', 2000)  
+        tip.innerText = 'Menos'
+setTimeout(()=> tip.innerHTML = '', 1000)  
     }
 }))

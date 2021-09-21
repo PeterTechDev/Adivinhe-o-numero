@@ -8,7 +8,6 @@
 
 body {
     background: #CCCCCC;
-    text-align: center;
 }
 main {
     height: 600px;
@@ -21,7 +20,6 @@ h1{
 }
 p{
     font-size: 1.5em;
-    text-align: center;
 }
 .subTitle {
     margin: 0 2rem;
@@ -30,18 +28,23 @@ p{
 img{
     width: 100%;
 }
+button{
+    cursor:pointer;
+}
+
 .center{
     display: flex;
     margin-top: 2rem;
-    /* border: solid green 2px; */
     overflow: hidden;
+    /* border: solid green 2px; */
 }
 
 .input-container{
     width: 45vw;
     margin-left: 1rem;
 }
-.numberBtn{
+.numberBtn,
+#tip{
     width: 50px;
     height: 50px;
     font-size: larger;
@@ -74,16 +77,16 @@ img{
 }
 
 input {
-margin: 4px;
-padding: 6px;
-border-radius: 5px;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 5px;
 }
 
 button {
-margin-top: 12px;
-padding: 4px 8px;
-border-radius: 10px;
-background: #ffffff;
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #ffffff;
 }
 
 #submitBtn {
@@ -92,28 +95,19 @@ background: #ffffff;
     font-size: larger;
     color: yellow;
 }
-button{
-    cursor:pointer;
-}
 
 .hide {
     display: none;
 }
 
 #final {
-    /* width: 50vw;
-    height: 50vh; */
     width: 80%;
     height: 50%;
     background-size: cover;
     background-position:center ;
-    margin: 0 auto;
 }
 
 #tip {
-    text-align: center;
-    font-size: larger;
     font-weight: 600;
-    height: 50px;
-    width: 50px;
+    padding-top: 25px;
 }

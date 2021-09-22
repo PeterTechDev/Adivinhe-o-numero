@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
 }
 body {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
     background: #CCCCCC;
+    height: 80vh;
 }
 main {
     height: 600px;
     max-width: 430px;
-    max-height: 500px;
+    max-height: 600px;
     margin: 2rem auto 0 auto;
+    /* border: 1px solid #000; */
 }
 p{
     font-size: 1.5em;
@@ -63,7 +65,7 @@ button{
 }
 .miss {
     display: flex;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
 }
 button {
     margin: 2px;
@@ -91,11 +93,39 @@ button {
 }
 
 /* FOOTER */
-footer{
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: darkgray;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    color: black;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/* footer{
     text-align: center;
     background: darkgray;
     color:darkorchid;
-    /* padding: 2rem .5rem; */
     opacity: .8;
     padding-top: 1rem;
     height: 7rem;
@@ -108,4 +138,4 @@ footer{
 footer i {
     font-size: 1.5rem;
     padding: 5px;
-}
+} */
